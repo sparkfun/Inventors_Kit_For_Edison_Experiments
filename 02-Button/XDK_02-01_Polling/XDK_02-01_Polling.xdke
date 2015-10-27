@@ -1,0 +1,72 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": "Android",
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "iot-tab": {
+    "fileStatus": {
+      "icon.png": {
+        "previousModTime": 1445986754052,
+        "modified": 1445986754052,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "main.js": {
+        "previousModTime": 1445986766087,
+        "modified": 1445986766087,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1445986754052,
+        "modified": 1445986754052,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1445986754052,
+        "modified": 1445986754052,
+        "seen": true,
+        "name": "README.md"
+      },
+      "XDK_02-01_Polling.xdk": {
+        "previousModTime": 1445986754303,
+        "modified": 1445986754303,
+        "seen": true,
+        "name": "XDK_02-01_Polling.xdk"
+      },
+      "XDK_02-01_Polling.xdke": {
+        "previousModTime": 1445986754316,
+        "modified": 1445986754316,
+        "seen": true,
+        "name": "XDK_02-01_Polling.xdke"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1445986754267,
+        "modified": 1445986754267,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      }
+    },
+    "boardFileStatus": {
+      "icon.png": {
+        "previousModTime": 1445986766774
+      },
+      "main.js": {
+        "previousModTime": 1445986766774
+      },
+      "package.json": {
+        "previousModTime": 1445986766774
+      },
+      "README.md": {
+        "previousModTime": 1445986766774
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1445986766774
+      }
+    }
+  }
+}
