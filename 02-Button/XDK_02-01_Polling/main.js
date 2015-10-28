@@ -1,3 +1,7 @@
+/*jslint node:true, vars:true, bitwise:true, unparam:true */
+/*jshint unused:true */
+// Leave the above lines for propper jshinting
+
 /**
  * SparkFun Inventor's Kit for Edison
  * Experiment 2 - Part 1: Pushing Some Buttons
@@ -5,8 +9,8 @@
  * October 27, 2015
  * https://github.com/sparkfun
  *
- * This is a simple example program that prints some text to the console
- * every time a button is pushed.
+ * This is a simple example program that displays the state of a button
+ * to the console.
  *
  * Released under the MIT License(http://opensource.org/licenses/MIT)
  */
