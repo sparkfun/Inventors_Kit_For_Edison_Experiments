@@ -1,0 +1,72 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": "Android",
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "iot-tab": {
+    "fileStatus": {
+      "icon.png": {
+        "previousModTime": 1446149829859,
+        "modified": 1446149829859,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "main.js": {
+        "previousModTime": 1446157267667,
+        "modified": 1446157267667,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1446151707448,
+        "modified": 1446151707448,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1446149829859,
+        "modified": 1446149829859,
+        "seen": true,
+        "name": "README.md"
+      },
+      "XDK_04_Email_Notifier.xdk": {
+        "previousModTime": 1446149830132,
+        "modified": 1446149830132,
+        "seen": true,
+        "name": "XDK_04_Email_Notifier.xdk"
+      },
+      "XDK_04_Email_Notifier.xdke": {
+        "previousModTime": 1446157177275,
+        "modified": 1446157177275,
+        "seen": true,
+        "name": "XDK_04_Email_Notifier.xdke"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1446149830109,
+        "modified": 1446149830109,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      }
+    },
+    "boardFileStatus": {
+      "icon.png": {
+        "previousModTime": 1446157271113
+      },
+      "main.js": {
+        "previousModTime": 1446157271113
+      },
+      "package.json": {
+        "previousModTime": 1446157271113
+      },
+      "README.md": {
+        "previousModTime": 1446157271113
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1446157271113
+      }
+    }
+  }
+}
