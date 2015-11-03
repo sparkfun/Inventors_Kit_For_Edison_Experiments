@@ -1,0 +1,72 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": "Android",
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "iot-tab": {
+    "fileStatus": {
+      "icon.png": {
+        "previousModTime": 1446514240235,
+        "modified": 1446514240235,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "main.js": {
+        "previousModTime": 1446528804797,
+        "modified": 1446528804797,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1446514309474,
+        "modified": 1446514309474,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1446514240235,
+        "modified": 1446514240235,
+        "seen": true,
+        "name": "README.md"
+      },
+      "XDK_04-02_Web_Button.xdk": {
+        "previousModTime": 1446514240782,
+        "modified": 1446514240782,
+        "seen": true,
+        "name": "XDK_04-02_Web_Button.xdk"
+      },
+      "XDK_04-02_Web_Button.xdke": {
+        "previousModTime": 1446528422745,
+        "modified": 1446528422745,
+        "seen": true,
+        "name": "XDK_04-02_Web_Button.xdke"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1446514240717,
+        "modified": 1446514240717,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      },
+      "XDK_05-02_Web_Button.xdk": {
+        "previousModTime": 1446514240782,
+        "modified": 1446514240782,
+        "seen": true,
+        "name": "XDK_05-02_Web_Button.xdk"
+      },
+      "XDK_05-02_Web_Button.xdke": {
+        "previousModTime": 1446528434766,
+        "modified": 1446528434766,
+        "seen": true,
+        "name": "XDK_05-02_Web_Button.xdke"
+      }
+    },
+    "boardFileStatus": {
+      "main.js": {
+        "previousModTime": 1446528807047
+      }
+    }
+  }
+}
