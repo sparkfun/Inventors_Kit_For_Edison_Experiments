@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!--
+SparkFun Inventor's Kit for Edison
+Experiment 6 - Part 1: Simple Web App
+This sketch was written by SparkFun Electronics
+November 10, 2015
+https://github.com/sparkfun
+
+Create a some dynamic text that appears when a button is pushed.
+
+Released under the MIT License(http://opensource.org/licenses/MIT)
+-->
+
+<html>
+    
+<head>
+  <title>Simple Web App</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <style>
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+    </style>
+</head>
+
+<body>
+
+    <!-- Static text -->
+    <div>
+        <h2>The Button</h2>
+        <p><button id="toggle_button">Push Me!</button></p>
+    </div>
+    
+    <!-- Text that appears on button push -->
+    <div id="toggle_text" style="display: none;">
+        <p>Boo!</p>
+    </div>
+    
+    <!-- Load the various JavaScript files -->
+    <script type="text/javascript" src="lib/jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
