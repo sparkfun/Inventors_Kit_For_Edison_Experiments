@@ -32,21 +32,22 @@ function connectIP() {
     // Attach a socket.io object tot he main window object. We do this to avoid
     // a global socket variable, as we will need it in the colorPicker callback.
     window.socket = null;
-    
-    // Create a connection to the socket.io server on the Edison
-    try {
+
+    // Connect to Edison
+    console.log("Connecting to: " + ipEl.val() + ":" + portEl.val());
+    window.socket = io.connect("http://" + ipEl.val() + ":" + portEl.val());
         
-        // Connect to Edison
-        console.log("Connecting to: " + ipEl.val() + ":" + portEl.val());
-        window.socket = io.connect("http://" + ipEl.val() + ":" + portEl.val());
-        
-        // Make RGB picker appear
-        rgbEl.fadeIn();
-        colorSelectorEl.trigger('click');
-        
-    } catch (e) {
-        console.log("Error connecting");
+    // If we don't have a connection, keep the RGB picker hidden and disconnect
+    console.log("Connected: " + window.socket.connected);
+    if (!window.socket.connected) {
+        window.socket.disconnect();
+        alert("Could not connect");
+        return;
     }
+        
+    // Make RGB picker appear
+    rgbEl.fadeIn();
+    colorSelectorEl.trigger('click');
 }
 
 // Short for jQuery(document).ready() method, which is called after the page
