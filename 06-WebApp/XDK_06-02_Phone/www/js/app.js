@@ -37,17 +37,18 @@ function connectIP() {
     console.log("Connecting to: " + ipEl.val() + ":" + portEl.val());
     window.socket = io.connect("http://" + ipEl.val() + ":" + portEl.val());
         
-    // If we don't have a connection, keep the RGB picker hidden and disconnect
-    console.log("Connected: " + window.socket.connected);
-    if (!window.socket.connected) {
+    // If we don't have a connection, disconnect and hide the RGB selector
+    window.socket.on('connect_error', function() {
         window.socket.disconnect();
         alert("Could not connect");
-        return;
-    }
-        
-    // Make RGB picker appear
-    rgbEl.fadeIn();
-    colorSelectorEl.trigger('click');
+        rgbEl.fadeOut();
+    });
+    
+    // If we do have a connection, make the RGB selector appear
+    window.socket.on('connect', function() {
+        rgbEl.fadeIn();
+        colorSelectorEl.trigger('click');
+    });
 }
 
 // Short for jQuery(document).ready() method, which is called after the page
@@ -69,7 +70,6 @@ $(function() {
         // This is called every time a new color is selected
         convertCallback: function(colors, type) {
             if (window.socket && window.socket.connected) {
-                console.log(colors.RND.rgb);
                 window.socket.emit('color', colors.RND.rgb);
             }
         }

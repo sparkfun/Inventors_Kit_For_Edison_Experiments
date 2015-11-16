@@ -39,8 +39,8 @@
         "name": "XDK_06-02_Edison.xdk"
       },
       "XDK_06-02_Edison.xdke": {
-        "previousModTime": 1447170840208,
-        "modified": 1447170840208,
+        "previousModTime": 1447172179913,
+        "modified": 1447172179913,
         "seen": true,
         "name": "XDK_06-02_Edison.xdke"
       },
@@ -52,8 +52,20 @@
       }
     },
     "boardFileStatus": {
+      "icon.png": {
+        "previousModTime": 1447715392833
+      },
       "main.js": {
-        "previousModTime": 1447172179832
+        "previousModTime": 1447715392833
+      },
+      "package.json": {
+        "previousModTime": 1447715392833
+      },
+      "README.md": {
+        "previousModTime": 1447715392833
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1447715392833
       }
     }
   }
