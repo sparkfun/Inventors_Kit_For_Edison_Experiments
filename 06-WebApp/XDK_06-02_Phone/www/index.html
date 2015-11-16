@@ -1,30 +1,54 @@
 <!DOCTYPE html>
-<html>
-<!--
-  * Please see the included README.md file for license terms and conditions.
-  -->
-<head>
-    <title>Blank Standard HTML5 Web App Template</title>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
 
-    <!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+<!--
+SparkFun Inventor's Kit for Edison
+Experiment 6 - Part 2: Phone RGB LED
+This sketch was written by SparkFun Electronics
+November 9, 2015
+https://github.com/sparkfun
+
+Runs as a web app on a smartphone. Creates a socket.io connection to the
+Edison and sends RGB values.
+
+Released under the MIT License(http://opensource.org/licenses/MIT)
+-->
+
+<html>
+    
+<head>
+  <title>Set RGB of Edison</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
     <style>
-        /* following two viewport lines are equivalent to meta viewport statement above, needed for Windows */
-        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
         @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
         @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
     </style>
-
-    <!-- Uncomment the following scripts if you convert your "Standard HTML5" project into a "Cordova" project. -->
-    <!-- <script src="cordova.js"></script> -->          <!-- phantom library, needed for Cordova api calls, added during build -->
-    <!-- <script src="js/app.js"></script> -->           <!-- recommended location of your JavaScript code relative to other JS files -->
-    <!-- <script src="xdk/init-dev.js"></script> -->     <!-- normalizes device and document ready events, see README for details -->
 </head>
 
 <body>
 
-    <p>Hello, Intel XDK!</p>
-
+    <!-- IP address and port inputs -->
+    <div id="connection">
+        <h2>Edison Address</h2>
+        <p>Please provide the IP address &amp; port to the Edison</p>
+        <p>
+            <input id="ip_address" type="text" placeholder="IP Address">
+            <input id="port" type="text" placeholder="Port">
+        </p>
+        <p><button id="send_ip_port">Connect</button></p>
+    </div>
+    
+    <!-- RGB Color Picker -->
+    <div id="rgb" style="display: none;">
+        <h2>Color Selector</h2>
+        <input id="colorSelector" class="color">
+    </div>
+    
+    <!-- Load the various JavaScript files -->
+    <script type="text/javascript" src="lib/jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="lib/jqColorPicker/jqColorPicker.min.js"></script>
+    <script type="text/javascript" src="lib/socketio/socket.io.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
+
 </html>

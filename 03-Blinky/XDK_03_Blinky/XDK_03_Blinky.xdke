@@ -39,8 +39,8 @@
         "name": "XDK_03_Blinky.xdk"
       },
       "XDK_03_Blinky.xdke": {
-        "previousModTime": 1446528609645,
-        "modified": 1446528609645,
+        "previousModTime": 1447165566137,
+        "modified": 1447165566137,
         "seen": true,
         "name": "XDK_03_Blinky.xdke"
       },
@@ -53,19 +53,19 @@
     },
     "boardFileStatus": {
       "icon.png": {
-        "previousModTime": 1447165565985
+        "previousModTime": 1447634130717
       },
       "main.js": {
-        "previousModTime": 1447165565985
+        "previousModTime": 1447634130717
       },
       "package.json": {
-        "previousModTime": 1447165565985
+        "previousModTime": 1447634130717
       },
       "README.md": {
-        "previousModTime": 1447165565985
+        "previousModTime": 1447634130717
       },
       "xdk/project-info.json": {
-        "previousModTime": 1447165565985
+        "previousModTime": 1447634130717
       }
     }
   }
