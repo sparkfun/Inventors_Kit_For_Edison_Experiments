@@ -9,52 +9,48 @@
   "iot-tab": {
     "fileStatus": {
       "icon.png": {
-        "previousModTime": 1446528967854,
-        "modified": 1446528967854,
+        "previousModTime": 1446567276545,
+        "modified": 1446567276545,
         "seen": true,
         "name": "icon.png"
       },
       "main.js": {
-        "previousModTime": 1446529345596,
-        "modified": 1446529345596,
+        "previousModTime": 1446567276545,
+        "modified": 1446567276545,
         "seen": true,
         "name": "main.js"
       },
       "package.json": {
-        "previousModTime": 1446528967854,
-        "modified": 1446528967854,
+        "previousModTime": 1446567276545,
+        "modified": 1446567276545,
         "seen": true,
         "name": "package.json"
       },
       "README.md": {
-        "previousModTime": 1446528967855,
-        "modified": 1446528967855,
+        "previousModTime": 1446567276535,
+        "modified": 1446567276535,
         "seen": true,
         "name": "README.md"
       },
       "XDK_05-01_Web_Page.xdk": {
-        "previousModTime": 1446528968580,
-        "modified": 1446528968580,
+        "previousModTime": 1446567276545,
+        "modified": 1446567276545,
         "seen": true,
         "name": "XDK_05-01_Web_Page.xdk"
       },
       "XDK_05-01_Web_Page.xdke": {
-        "previousModTime": 1446529165733,
-        "modified": 1446529165733,
+        "previousModTime": 1446581709044,
+        "modified": 1446581709044,
         "seen": true,
         "name": "XDK_05-01_Web_Page.xdke"
       },
       "xdk/project-info.json": {
-        "previousModTime": 1446528968514,
-        "modified": 1446528968514,
+        "previousModTime": 1446567276545,
+        "modified": 1446567276545,
         "seen": true,
         "name": "xdk/project-info.json"
       }
     },
-    "boardFileStatus": {
-      "main.js": {
-        "previousModTime": 1446529346219
-      }
-    }
+    "boardFileStatus": {}
   }
 }

@@ -1,0 +1,66 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": "Android",
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "iot-tab": {
+    "fileStatus": {
+      "icon.png": {
+        "previousModTime": 1447785539316,
+        "modified": 1447785539316,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "main.js": {
+        "previousModTime": 1447795040612,
+        "modified": 1447795040612,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1447785539315,
+        "modified": 1447785539315,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1447785539316,
+        "modified": 1447785539316,
+        "seen": true,
+        "name": "README.md"
+      },
+      "XDK_07_Speaker.xdk": {
+        "previousModTime": 1447785539560,
+        "modified": 1447785539560,
+        "seen": true,
+        "name": "XDK_07_Speaker.xdk"
+      },
+      "XDK_07_Speaker.xdke": {
+        "previousModTime": 1447795041047,
+        "modified": 1447795041047,
+        "seen": true,
+        "name": "XDK_07_Speaker.xdke"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1447785539523,
+        "modified": 1447785539523,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      },
+      "songs/song.txt": {
+        "previousModTime": 1447795065616,
+        "modified": 1447795065616,
+        "seen": true,
+        "name": "songs/song.txt"
+      }
+    },
+    "boardFileStatus": {
+      "songs/song.txt": {
+        "previousModTime": 1447795067254
+      }
+    }
+  }
+}
