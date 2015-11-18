@@ -15,8 +15,8 @@
         "name": "icon.png"
       },
       "main.js": {
-        "previousModTime": 1447795040612,
-        "modified": 1447795040612,
+        "previousModTime": 1447796279449,
+        "modified": 1447796279449,
         "seen": true,
         "name": "main.js"
       },
@@ -39,8 +39,8 @@
         "name": "XDK_07_Speaker.xdk"
       },
       "XDK_07_Speaker.xdke": {
-        "previousModTime": 1447795041047,
-        "modified": 1447795041047,
+        "previousModTime": 1447795067271,
+        "modified": 1447795067271,
         "seen": true,
         "name": "XDK_07_Speaker.xdke"
       },
@@ -58,8 +58,8 @@
       }
     },
     "boardFileStatus": {
-      "songs/song.txt": {
-        "previousModTime": 1447795067254
+      "main.js": {
+        "previousModTime": 1447796280133
       }
     }
   }

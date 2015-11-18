@@ -1,0 +1,62 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": "Android",
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "iot-tab": {
+    "fileStatus": {
+      "icon.png": {
+        "previousModTime": 1447887603387,
+        "modified": 1447887603387,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "main.js": {
+        "previousModTime": 1447889822069,
+        "modified": 1447889822069,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1447887795414,
+        "modified": 1447887795414,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1447887603387,
+        "modified": 1447887603387,
+        "seen": true,
+        "name": "README.md"
+      },
+      "XDK_10-01_Keyboard.xdk": {
+        "previousModTime": 1447887603616,
+        "modified": 1447887603616,
+        "seen": true,
+        "name": "XDK_10-01_Keyboard.xdk"
+      },
+      "XDK_10-01_Keyboard.xdke": {
+        "previousModTime": 1447889825001,
+        "modified": 1447889825001,
+        "seen": true,
+        "name": "XDK_10-01_Keyboard.xdke"
+      },
+      "libs/keymap.js": {
+        "previousModTime": 1447887756499,
+        "modified": 1447887756499,
+        "seen": true,
+        "name": "libs/keymap.js"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1447887603598,
+        "modified": 1447887603598,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      }
+    },
+    "boardFileStatus": {}
+  }
+}
