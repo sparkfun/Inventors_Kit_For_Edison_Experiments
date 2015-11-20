@@ -32,30 +32,28 @@ var cursorPos;
 
 // Johnny Five initialization
 board.on('ready', function() {
+    
     // Create our LCD object and define the pins
     // LCD pin name:    RS  EN DB4 DB5 DB6 DB7
-    // Edison GP:       44  45  46  47  48  49
+    // Edison GPIO:     14  15  44  45  46  47
     lcd = new five.LCD({
-        pins: ["GP44", "GP45", "GP46", "GP47", "GP48", "GP49"],
+        pins: ["GP14", "GP15", "GP44", "GP45", "GP46", "GP47"],
         backlight: 6,
         rows: 2,
         cols: 16
     });
     
-    // Reset LCD
-    lcd.off();
+    // Turn on LCD, clear it, and set cursor to home
     lcd.on();
-    
-    // Show a cursor and set initial position
     lcd.clear();
     lcd.home();
     lcd.blink();
     cursorPos = 0;
+    console.log("Start typing!");
 });
 
 // Create a stream that emits events on every key stroke
 var readableStream = fs.createReadStream('/dev/input/event2');
-console.log("Start typing!");
 
 // Callback for a key event
 readableStream.on('data', function(buf) {
