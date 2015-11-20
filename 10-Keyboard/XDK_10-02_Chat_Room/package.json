@@ -1,0 +1,15 @@
+{
+  "name": "blankapp",
+  "description": "",
+  "version": "0.0.0",
+  "main": "main.js",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+      "socket.io": "1.3.7",
+      "express": "4.10.2",
+      "johnny-five": "0.9.11",
+      "edison-io": "0.8.18"
+  }
+}

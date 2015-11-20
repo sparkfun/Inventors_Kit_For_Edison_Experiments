@@ -1,0 +1,90 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": "Android",
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "iot-tab": {
+    "fileStatus": {
+      "icon.png": {
+        "previousModTime": 1448061927361,
+        "modified": 1448061927361,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "index.html": {
+        "previousModTime": 1448058394960,
+        "modified": 1448058394960,
+        "seen": true,
+        "name": "index.html"
+      },
+      "main.js": {
+        "previousModTime": 1448061190538,
+        "modified": 1448061190538,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1448058480894,
+        "modified": 1448058480894,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1448061927361,
+        "modified": 1448061927361,
+        "seen": true,
+        "name": "README.md"
+      },
+      "XDK_10-02_Chat_Room.xdk": {
+        "previousModTime": 1448061927633,
+        "modified": 1448061927633,
+        "seen": true,
+        "name": "XDK_10-02_Chat_Room.xdk"
+      },
+      "XDK_10-02_Chat_Room.xdke": {
+        "previousModTime": 1448061927643,
+        "modified": 1448061927643,
+        "seen": true,
+        "name": "XDK_10-02_Chat_Room.xdke"
+      },
+      "libs/keymap.js": {
+        "previousModTime": 1448058621741,
+        "modified": 1448058621741,
+        "seen": true,
+        "name": "libs/keymap.js"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1448061927615,
+        "modified": 1448061927615,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      }
+    },
+    "boardFileStatus": {
+      "icon.png": {
+        "previousModTime": 1448062124813
+      },
+      "index.html": {
+        "previousModTime": 1448062124813
+      },
+      "main.js": {
+        "previousModTime": 1448062124813
+      },
+      "package.json": {
+        "previousModTime": 1448062124813
+      },
+      "README.md": {
+        "previousModTime": 1448062124813
+      },
+      "libs/keymap.js": {
+        "previousModTime": 1448062124813
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1448062124813
+      }
+    }
+  }
+}
