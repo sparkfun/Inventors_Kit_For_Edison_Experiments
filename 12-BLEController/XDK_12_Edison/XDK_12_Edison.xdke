@@ -9,51 +9,51 @@
   "iot-tab": {
     "fileStatus": {
       "icon.png": {
-        "previousModTime": 1446055991740,
-        "modified": 1446055991740,
+        "previousModTime": 1448400835457,
+        "modified": 1448400835457,
         "seen": true,
         "name": "icon.png"
       },
       "main.js": {
-        "previousModTime": 1448395371316,
-        "modified": 1448395371316,
+        "previousModTime": 1448408862842,
+        "modified": 1448408862842,
         "seen": true,
         "name": "main.js"
       },
       "package.json": {
-        "previousModTime": 1446055991740,
-        "modified": 1446055991740,
+        "previousModTime": 1448405300271,
+        "modified": 1448405300271,
         "seen": true,
         "name": "package.json"
       },
       "README.md": {
-        "previousModTime": 1446055991738,
-        "modified": 1446055991738,
+        "previousModTime": 1448400835457,
+        "modified": 1448400835457,
         "seen": true,
         "name": "README.md"
       },
-      "XDK_02-02_ISR.xdk": {
-        "previousModTime": 1446055991738,
-        "modified": 1446055991738,
+      "XDK_12_Edison.xdk": {
+        "previousModTime": 1448400835687,
+        "modified": 1448400835687,
         "seen": true,
-        "name": "XDK_02-02_ISR.xdk"
+        "name": "XDK_12_Edison.xdk"
       },
-      "XDK_02-02_ISR.xdke": {
-        "previousModTime": 1448395349969,
-        "modified": 1448395349969,
+      "XDK_12_Edison.xdke": {
+        "previousModTime": 1448408418212,
+        "modified": 1448408418212,
         "seen": true,
-        "name": "XDK_02-02_ISR.xdke"
+        "name": "XDK_12_Edison.xdke"
       },
       "xdk/project-info.json": {
-        "previousModTime": 1446055991741,
-        "modified": 1446055991741,
+        "previousModTime": 1448400835650,
+        "modified": 1448400835650,
         "seen": true,
         "name": "xdk/project-info.json"
       }
     },
     "boardFileStatus": {
       "main.js": {
-        "previousModTime": 1448395371816
+        "previousModTime": 1448408865022
       }
     }
   }
