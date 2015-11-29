@@ -4,9 +4,9 @@
     "creationData": {
       "projectTypeName": "com.intel.xdk.projecttype.iotapp",
       "src": "iotapp/iotapp-template-blank-iot/sample.zip",
-      "projectGuid": "676d5050-cfc4-4744-8294-1081271a6ce8",
-      "lastModifiedDate": 1448777314989,
-      "creationDate": 1448777313965
+      "projectGuid": "dc316cd5-d8f5-46ea-b25d-f2f2201acfce",
+      "lastModifiedDate": 1448826838051,
+      "creationDate": 1448826837483
     },
     "sourceDirectory": "",
     "cordovaPluginsDirectory": "plugins",
@@ -38,7 +38,7 @@
           "android-installLocation": "auto"
         },
         "isActive_": true,
-        "appName_": "XDK_09-02_Weather_Forecast",
+        "appName_": "XDK_09-02_Weather",
         "appID_": "not.yet.specified",
         "appAccess_": {
           "mode": "legacy",
@@ -67,7 +67,7 @@
           "android-installLocation": "auto"
         },
         "isActive_": true,
-        "appName_": "XDK_09-02_Weather_Forecast",
+        "appName_": "XDK_09-02_Weather",
         "appID_": "not.yet.specified",
         "appAccess_": {
           "mode": "legacy",
@@ -95,7 +95,7 @@
           "ios-configuration": "adhoc"
         },
         "isActive_": true,
-        "appName_": "XDK_09-02_Weather_Forecast",
+        "appName_": "XDK_09-02_Weather",
         "appID_": "not.yet.specified",
         "appAccess_": {
           "mode": "legacy",
@@ -119,7 +119,7 @@
         "name_": "Windows8",
         "preferences_": {},
         "isActive_": true,
-        "appName_": "XDK_09-02_Weather_Forecast",
+        "appName_": "XDK_09-02_Weather",
         "appID_": "not.yet.specified",
         "appAccess_": {
           "mode": "legacy",
