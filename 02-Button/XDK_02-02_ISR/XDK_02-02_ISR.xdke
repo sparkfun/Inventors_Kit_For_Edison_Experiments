@@ -9,51 +9,63 @@
   "iot-tab": {
     "fileStatus": {
       "icon.png": {
-        "previousModTime": 1446055991740,
-        "modified": 1446055991740,
+        "previousModTime": 1445991208055,
+        "modified": 1445991208055,
         "seen": true,
         "name": "icon.png"
       },
       "main.js": {
-        "previousModTime": 1448395371316,
-        "modified": 1448395371316,
+        "previousModTime": 1445998039243,
+        "modified": 1445998039243,
         "seen": true,
         "name": "main.js"
       },
       "package.json": {
-        "previousModTime": 1446055991740,
-        "modified": 1446055991740,
+        "previousModTime": 1445991208053,
+        "modified": 1445991208053,
         "seen": true,
         "name": "package.json"
       },
       "README.md": {
-        "previousModTime": 1446055991738,
-        "modified": 1446055991738,
+        "previousModTime": 1445991208053,
+        "modified": 1445991208053,
         "seen": true,
         "name": "README.md"
       },
       "XDK_02-02_ISR.xdk": {
-        "previousModTime": 1446055991738,
-        "modified": 1446055991738,
+        "previousModTime": 1445991210488,
+        "modified": 1445991210488,
         "seen": true,
         "name": "XDK_02-02_ISR.xdk"
       },
       "XDK_02-02_ISR.xdke": {
-        "previousModTime": 1448395349969,
-        "modified": 1448395349969,
+        "previousModTime": 1448503726926,
+        "modified": 1448503726926,
         "seen": true,
         "name": "XDK_02-02_ISR.xdke"
       },
       "xdk/project-info.json": {
-        "previousModTime": 1446055991741,
-        "modified": 1446055991741,
+        "previousModTime": 1445991210416,
+        "modified": 1445991210416,
         "seen": true,
         "name": "xdk/project-info.json"
       }
     },
     "boardFileStatus": {
+      "icon.png": {
+        "previousModTime": 1448553809788
+      },
       "main.js": {
-        "previousModTime": 1448395371816
+        "previousModTime": 1448553809788
+      },
+      "package.json": {
+        "previousModTime": 1448553809788
+      },
+      "README.md": {
+        "previousModTime": 1448553809788
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1448553809788
       }
     }
   }

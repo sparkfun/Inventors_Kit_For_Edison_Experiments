@@ -1,0 +1,72 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": "Android",
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "iot-tab": {
+    "fileStatus": {
+      "icon.png": {
+        "previousModTime": 1448777313791,
+        "modified": 1448777313791,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "main.js": {
+        "previousModTime": 1448777630588,
+        "modified": 1448777630588,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1448777435540,
+        "modified": 1448777435540,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1448777313791,
+        "modified": 1448777313791,
+        "seen": true,
+        "name": "README.md"
+      },
+      "XDK_09-02_Weather_Forecast.xdk": {
+        "previousModTime": 1448777315391,
+        "modified": 1448777315391,
+        "seen": true,
+        "name": "XDK_09-02_Weather_Forecast.xdk"
+      },
+      "XDK_09-02_Weather_Forecast.xdke": {
+        "previousModTime": 1448777315458,
+        "modified": 1448777315458,
+        "seen": true,
+        "name": "XDK_09-02_Weather_Forecast.xdke"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1448777314930,
+        "modified": 1448777314930,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      }
+    },
+    "boardFileStatus": {
+      "icon.png": {
+        "previousModTime": 1448777990251
+      },
+      "main.js": {
+        "previousModTime": 1448777990251
+      },
+      "package.json": {
+        "previousModTime": 1448777990251
+      },
+      "README.md": {
+        "previousModTime": 1448777990251
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1448777990251
+      }
+    }
+  }
+}

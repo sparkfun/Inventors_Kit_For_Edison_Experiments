@@ -1,0 +1,72 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": "Android",
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "iot-tab": {
+    "fileStatus": {
+      "icon.png": {
+        "previousModTime": 1448770232285,
+        "modified": 1448770232285,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "main.js": {
+        "previousModTime": 1448770688655,
+        "modified": 1448770688655,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1448770308789,
+        "modified": 1448770308789,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1448770232284,
+        "modified": 1448770232284,
+        "seen": true,
+        "name": "README.md"
+      },
+      "XDK_09-01_Character_LCD.xdk": {
+        "previousModTime": 1448770235114,
+        "modified": 1448770235114,
+        "seen": true,
+        "name": "XDK_09-01_Character_LCD.xdk"
+      },
+      "XDK_09-01_Character_LCD.xdke": {
+        "previousModTime": 1448770235236,
+        "modified": 1448770235236,
+        "seen": true,
+        "name": "XDK_09-01_Character_LCD.xdke"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1448770234551,
+        "modified": 1448770234551,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      }
+    },
+    "boardFileStatus": {
+      "icon.png": {
+        "previousModTime": 1448771093132
+      },
+      "main.js": {
+        "previousModTime": 1448771093132
+      },
+      "package.json": {
+        "previousModTime": 1448771093132
+      },
+      "README.md": {
+        "previousModTime": 1448771093132
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1448771093132
+      }
+    }
+  }
+}

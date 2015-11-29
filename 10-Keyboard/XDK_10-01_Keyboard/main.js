@@ -19,7 +19,7 @@
 var fs = require('fs');
 var keymap = require('./libs/keymap.js');
 
-// We'll also need johny-five and its Edison wrapper
+// We'll also need johnny-five and its Edison wrapper
 var five = require('johnny-five');
 var Edison = require('edison-io');
 var board = new five.Board({
