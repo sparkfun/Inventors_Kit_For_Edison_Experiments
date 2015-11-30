@@ -27,18 +27,49 @@ Released under the MIT License(http://opensource.org/licenses/MIT)
 
 <body>
 
-    <!-- IP address and port inputs -->
+    <!-- Our header -->
     <h3 style="text-align:center;">Accelerometer Demo</h3>
-    <div id="connection" style="margin:auto; width:240px; padding:5px;">
-        <input id="ble_name" type="text" placeholder="Name of device" 
-               style="width:60%;">
-        <button id="connect_ble" style="width:35%;">Connect</button>
+    
+    <!-- X, Y, Z accelerometer fields -->
+    <div style="margin:auto; width:280px; padding:10px; font-size:14pt">
+        <table style="margin:auto; font-family:Arial; text-align:right;">
+            <col width="25px" />
+            <col width="60px" />
+            <col width="25px" />
+            <col width="60px" />
+            <col width="25px" />
+            <col width="60px" />
+            <tr>
+                <td style="padding:2px"><b>X:</b></td>
+                <td id="x" style="
+                                  padding:3px;
+                                  background-color:#B6B6B6;">
+                    0.00
+                </td>
+                <td style="padding:2px"><b> Y:</b></td>
+                <td id="y" style="padding:3px;
+                                  background-color:#B6B6B6;">
+                    0.00
+                </td>
+                <td style="padding:2px"><b> Z:</b></td>
+                <td id="z" style="padding:3px;
+                                  background-color:#B6B6B6;">
+                    0.00
+                </td>
+            </tr>
+        </table>
     </div>
     
     <!-- Debugging -->
+    <div style="margin:auto; 
+                width:280px; 
+                height:20px;
+                padding:1px;">
+        Debugging console
+    </div>
     <div id="debug_box" style="margin:auto; 
                                width:280px;
-                               height:140px; 
+                               height:240px; 
                                padding:1px; 
                                overflow:auto; 
                                background:#0d0d0d;">

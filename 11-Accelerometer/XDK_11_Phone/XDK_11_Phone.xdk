@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/sample-cordova-starter-app/sample.zip",
       "projectGuid": "e5d96ad1-a885-4aac-9df0-9b38069386b6",
-      "lastModifiedDate": 1448863755739,
+      "lastModifiedDate": 1448918967683,
       "creationDate": 1448860741778
     },
     "XDK-app-designer": "false",
@@ -86,6 +86,30 @@
         "description": "Cordova Device Motion Plugin",
         "data": {},
         "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-ble-central",
+        "name": "BLE",
+        "version": "1.0.2",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-ble-central",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-ble-central",
+        "selectedState": "Included",
+        "checksum": "a2906b41",
+        "dependsOn": [],
+        "topLevel": true,
+        "permissions": {
+          "android:name": [
+            "android.permission.BLUETOOTH",
+            "android.permission.BLUETOOTH_ADMIN"
+          ]
+        },
+        "description": "Bluetooth Low Energy (BLE) Central Plugin",
+        "data": {},
+        "dependedBy": [],
+        "custom": "true"
       }
     ],
     "buildConfigurations": {
