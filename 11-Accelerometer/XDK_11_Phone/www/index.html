@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<!--
+SparkFun Inventor's Kit for Edison
+Experiment 11: Accelerometer Demo
+This sketch was written by SparkFun Electronics
+November 29, 2015
+https://github.com/sparkfun
+
+Runs as BLE central on smartphone. Connects to the Edison and sends
+accelerometer data.
+
+Released under the MIT License(http://opensource.org/licenses/MIT)
+-->
+
+<html>
+    
+<head>
+  <title>Accelerometer</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <style>
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+    </style>
+</head>
+
+<body>
+
+    <!-- IP address and port inputs -->
+    <h3 style="text-align:center;">Accelerometer Demo</h3>
+    <div id="connection" style="margin:auto; width:240px; padding:5px;">
+        <input id="ble_name" type="text" placeholder="Name of device" 
+               style="width:60%;">
+        <button id="connect_ble" style="width:35%;">Connect</button>
+    </div>
+    
+    <!-- Debugging -->
+    <div id="debug_box" style="margin:auto; 
+                               width:280px;
+                               height:140px; 
+                               padding:1px; 
+                               overflow:auto; 
+                               background:#0d0d0d;">
+        <ul id="debug" style="color:#00BB00;"></ul>
+    </div>
+    
+    <!-- Load the various JavaScript files -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
