@@ -23,8 +23,7 @@
 window.edison = {
     deviceId: "98:4F:EE:04:3E:F9",
     service: "12ab",
-    characteristic: "34cd",
-    connected: false
+    characteristic: "34cd"
 };
 
 /******************************************************************************
@@ -33,6 +32,9 @@ window.edison = {
 
 // Global app object we can use to create BLE callbacks
 window.app = {
+    
+    // A way for us to reference the thread
+    watchID: null,
     
     // Call this first!
     initialize: function() {
@@ -61,12 +63,46 @@ window.app = {
     //  On BLE connection, notify the user
     onConnect: function() {
         debug("Connected to " + window.edison.deviceId);
-        window.edison.connected = true;
+        
+        // Set the accelerometer to sample and send data every 50 ms
+        window.watchID = navigator.accelerometer.watchAcceleration(
+            function(acceleration) {
+                window.app.onAccelerometer(acceleration, window);
+            },
+            window.app.onError,
+            { frequency: 500 }
+        );
+    },
+        
+    // This gets executed on new accelerometer data
+    onAccelerometer: function(accel, win) {
+            
+        // Create an array of accelerometer values
+        var a = [accel.x, accel.y, accel.z];
+
+        // Set new values for X, Y, and Z acceleration on phone
+        $('#x')[0].innerHTML = a[0].toFixed(2);
+        $('#y')[0].innerHTML = a[1].toFixed(2);
+        $('#z')[0].innerHTML = a[2].toFixed(2);
+        
+        // Assign X, Y and Z values to a 16-bit, signed integer array
+        var buf = new Int16Array(3);
+        buf[0] = a[0] * 100;
+        buf[1] = a[1] * 100;
+        buf[2] = a[2] * 100;
+    
+        // Write data to the characteristic
+        ble.write(win.edison.deviceId,
+                  win.edison.service,
+                  win.edison.characteristic,
+                  buf.buffer);
+                  //function() {debug("Acc data written!");}, 
+                  //function() {debug("Acc data NOT written");});        
     },
     
     // Alert the user if there is an error
     onError: function(err) {
-        window.edison.connected = false;
+        navigator.accelerometer.clearWatch(window.watchID);
         debug("Error: " + err);
         alert("Error: " + err);
     }
@@ -83,45 +119,6 @@ function onDeviceReady() {
     
     // Prepare the BLE connection
     window.app.initialize();
-    
-    // Poll the accelerometer every 50 ms and send that data to the Edison
-    setInterval(function() {
-        navigator.accelerometer.getCurrentAcceleration(function(accel) {
-            
-            // Create an array of accelerometer values
-            var a = [accel.x, accel.y, accel.z];
-            
-            // Set new values for X, Y, and Z acceleration on phone
-            $('#x')[0].innerHTML = a[0].toFixed(2);
-            $('#y')[0].innerHTML = a[1].toFixed(2);
-            $('#z')[0].innerHTML = a[2].toFixed(2);
-            
-            // Scale acceleration data to 16-bit, signed integers
-            a.forEach(function(value, index, arr) {
-                value = Math.trunc(value * 100);
-                value = Math.min(value, 32767);
-                arr[index] = Math.max(value, -32768);
-            });
-            
-            // If we have a BLE connection, send out the accelerometer data
-            debug("checking");
-            if (window.edison.connected) {
-                debug("Writing acc data...");
-                /*ble.write(window.edison.deviceId,
-                          window.edison.service,
-                          window.edison.characterisstic,
-                          Int16Array.from(a),
-                          function() {
-                    debug("Acc data written!");
-                }, window.app.onError);*/
-            } else {
-                debug("NOT connected");
-            }
-            
-        }, function() {
-            debug("Error reading accelerometer");
-        });
-    }, 50);
 }
 
 // Create a pseudo-debugging console
