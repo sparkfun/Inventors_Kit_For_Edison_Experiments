@@ -15,14 +15,14 @@
         "name": "icon.png"
       },
       "main.js": {
-        "previousModTime": 1448953869645,
-        "modified": 1448953869645,
+        "previousModTime": 1449094041836,
+        "modified": 1449094041836,
         "seen": true,
         "name": "main.js"
       },
       "package.json": {
-        "previousModTime": 1448948513795,
-        "modified": 1448948513795,
+        "previousModTime": 1449028590632,
+        "modified": 1449028590632,
         "seen": true,
         "name": "package.json"
       },
@@ -39,8 +39,8 @@
         "name": "XDK_11_Edison.xdk"
       },
       "XDK_11_Edison.xdke": {
-        "previousModTime": 1448953496345,
-        "modified": 1448953496345,
+        "previousModTime": 1449093806305,
+        "modified": 1449093806305,
         "seen": true,
         "name": "XDK_11_Edison.xdke"
       },
@@ -53,7 +53,7 @@
     },
     "boardFileStatus": {
       "main.js": {
-        "previousModTime": 1448953874637
+        "previousModTime": 1449094050258
       }
     }
   }

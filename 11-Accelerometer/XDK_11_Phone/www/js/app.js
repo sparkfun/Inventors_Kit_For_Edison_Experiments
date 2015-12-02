@@ -64,13 +64,13 @@ window.app = {
     onConnect: function() {
         debug("Connected to " + window.edison.deviceId);
         
-        // Set the accelerometer to sample and send data every 50 ms
+        // Set the accelerometer to sample and send data every 100 ms
         window.watchID = navigator.accelerometer.watchAcceleration(
             function(acceleration) {
                 window.app.onAccelerometer(acceleration, window);
             },
             window.app.onError,
-            { frequency: 500 }
+            { frequency: 100 }
         );
     },
         
