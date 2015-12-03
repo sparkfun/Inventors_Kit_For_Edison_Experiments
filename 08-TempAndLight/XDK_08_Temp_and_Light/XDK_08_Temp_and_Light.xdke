@@ -1,0 +1,72 @@
+{
+  "project": {
+    "projectSettingsVersion": "2.0.0",
+    "initialAutoPluginCount": 0,
+    "currentBuildConfiguration": "Android",
+    "projectFiles": {},
+    "projectDirectories": {}
+  },
+  "iot-tab": {
+    "fileStatus": {
+      "icon.png": {
+        "previousModTime": 1449101086317,
+        "modified": 1449101086317,
+        "seen": true,
+        "name": "icon.png"
+      },
+      "main.js": {
+        "previousModTime": 1449101091036,
+        "modified": 1449101091036,
+        "seen": true,
+        "name": "main.js"
+      },
+      "package.json": {
+        "previousModTime": 1449101116844,
+        "modified": 1449101116844,
+        "seen": true,
+        "name": "package.json"
+      },
+      "README.md": {
+        "previousModTime": 1449101086317,
+        "modified": 1449101086317,
+        "seen": true,
+        "name": "README.md"
+      },
+      "XDK_08_Temp_and_Light.xdk": {
+        "previousModTime": 1449101086546,
+        "modified": 1449101086546,
+        "seen": true,
+        "name": "XDK_08_Temp_and_Light.xdk"
+      },
+      "XDK_08_Temp_and_Light.xdke": {
+        "previousModTime": 1449101086641,
+        "modified": 1449101086641,
+        "seen": true,
+        "name": "XDK_08_Temp_and_Light.xdke"
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1449101086511,
+        "modified": 1449101086511,
+        "seen": true,
+        "name": "xdk/project-info.json"
+      }
+    },
+    "boardFileStatus": {
+      "icon.png": {
+        "previousModTime": 1449101132905
+      },
+      "main.js": {
+        "previousModTime": 1449101132905
+      },
+      "package.json": {
+        "previousModTime": 1449101132905
+      },
+      "README.md": {
+        "previousModTime": 1449101132905
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1449101132905
+      }
+    }
+  }
+}
