@@ -15,14 +15,14 @@
         "name": "icon.png"
       },
       "main.js": {
-        "previousModTime": 1449101091036,
-        "modified": 1449101091036,
+        "previousModTime": 1449184626022,
+        "modified": 1449184626022,
         "seen": true,
         "name": "main.js"
       },
       "package.json": {
-        "previousModTime": 1449101116844,
-        "modified": 1449101116844,
+        "previousModTime": 1449182819929,
+        "modified": 1449182819929,
         "seen": true,
         "name": "package.json"
       },
@@ -39,8 +39,8 @@
         "name": "XDK_08_Temp_and_Light.xdk"
       },
       "XDK_08_Temp_and_Light.xdke": {
-        "previousModTime": 1449101086641,
-        "modified": 1449101086641,
+        "previousModTime": 1449184518696,
+        "modified": 1449184518696,
         "seen": true,
         "name": "XDK_08_Temp_and_Light.xdke"
       },
@@ -52,20 +52,8 @@
       }
     },
     "boardFileStatus": {
-      "icon.png": {
-        "previousModTime": 1449101132905
-      },
       "main.js": {
-        "previousModTime": 1449101132905
-      },
-      "package.json": {
-        "previousModTime": 1449101132905
-      },
-      "README.md": {
-        "previousModTime": 1449101132905
-      },
-      "xdk/project-info.json": {
-        "previousModTime": 1449101132905
+        "previousModTime": 1449184627292
       }
     }
   }

@@ -21,6 +21,20 @@ var mraa = require('mraa');
 // The Request module helps us make HTTP calls (e.g. to data.sparkfun)
 var request = require('request');
 
+// Save our keys for data.sparkfun
+var phant = {
+    server: "data.sparkfun.com",        // Base URL of the feed
+    publicKey: "zDEY0nx64DiYaq6dlddp",  // Public key, everyone can see this
+    privateKey: "xxxxxxxxxxxxxxxxxxxx", // Private key, only you should know
+    fields: {                           // Your feed's data fields
+        "temperature": null,
+        "light": null
+    }
+};
+
+// Define a timeout period for the HTTP request (2 seconds)
+var reqTimeout = 2000;                  // milliseconds
+
 // TI ADS1015 on ADC Block (http://www.ti.com.cn/cn/lit/ds/symlink/ads1015.pdf)
 var adc = new mraa.I2c(1);
 adc.address(0x48);
@@ -77,8 +91,41 @@ adc.readWordFlip = function(reg) {
     return ((buf & 0xff) << 8) | ((buf & 0xff00) >> 8);
 };
 
+// Send an HTTP request to data.sparkfun to post our data
+function postData(values) {
+    
+    var prop;
+    
+    // Construct the HTTP request string
+    var req = "http://data.sparkfun.com/input/" + phant.publicKey +
+              "?private_key=" + phant.privateKey;
+    for (prop in values) {
+        req += "&" + prop + "=" + values[prop].toString().replace(/ /g, "%20");
+    }
+    
+    // Make a request and notify the console of its success
+    request(req, {timeout: reqTimeout}, function(error, response, body) {
+        
+        // Exit if we failed to post
+        if (error) {
+            console.log("Post failed. " + error);
+            
+        // If HTTP responded with 200, we know we successfully posted the data
+        } else if (response.statusCode === 200) {
+            var posted = "Posted successfully with: ";
+            for (prop in values) {
+                posted += prop + "=" + values[prop] + " ";
+            }
+            console.log(posted);
+        }
+        
+        // Wait 10 seconds before posting again
+        setTimeout(takeReadings, 10000);
+    });
+}
+
 // Take temperature and light readings at regular intervals
-setInterval(takeReadings, 500);
+takeReadings();
 function takeReadings() {
     
     // Read temperature sensor (on ADC0) and calculate temperature in Celsius
@@ -88,6 +135,10 @@ function takeReadings() {
     // Read light sensor (on ADC1)
     var v1 = adc.readADC(1);
     
-    // Print temperature and light to console
-    console.log("Temp: " + degC.toFixed(1) + "C Light: " + v1.toFixed(3) + "V");
+    // Construct a values object to send to our function
+    phant.fields.temperature = degC.toFixed(1);
+    phant.fields.light = v1.toFixed(3);
+
+    // Post to data.sparkfun
+    postData(phant.fields);
 }
