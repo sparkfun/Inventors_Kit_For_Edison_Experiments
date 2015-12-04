@@ -21,12 +21,16 @@ var mraa = require('mraa');
 // The Request module helps us make HTTP calls (e.g. to data.sparkfun)
 var request = require('request');
 
+// The ntp-client module allows us to get the current time (GMT)
+var ntp = require('ntp-client');
+
 // Save our keys for data.sparkfun
 var phant = {
     server: "data.sparkfun.com",        // Base URL of the feed
     publicKey: "zDEY0nx64DiYaq6dlddp",  // Public key, everyone can see this
     privateKey: "xxxxxxxxxxxxxxxxxxxx", // Private key, only you should know
     fields: {                           // Your feed's data fields
+        "time": null,
         "temperature": null,
         "light": null
     }
@@ -117,10 +121,9 @@ function postData(values) {
                 posted += prop + "=" + values[prop] + " ";
             }
             console.log(posted);
+        } else {
+            console.log("Problem posting. Response: " + response.statusCode);
         }
-        
-        // Wait 10 seconds before posting again
-        setTimeout(takeReadings, 10000);
     });
 }
 
@@ -135,10 +138,26 @@ function takeReadings() {
     // Read light sensor (on ADC1)
     var v1 = adc.readADC(1);
     
-    // Construct a values object to send to our function
-    phant.fields.temperature = degC.toFixed(1);
-    phant.fields.light = v1.toFixed(3);
+    // Get the current time and post to data.sparkfun
+    ntp.getNetworkTime("pool.ntp.org", 123, function(error, datetime) {
+        
+        // If it's an error, don't post anything
+        if (error) {
+            console.log("Error getting time: " + error);
+            
+        // Otherwise, post all the data!
+        } else {
+            
+            // Construct a values object to send to our function
+            phant.fields.time = datetime;
+            phant.fields.temperature = degC.toFixed(1);
+            phant.fields.light = v1.toFixed(3);
 
-    // Post to data.sparkfun
-    postData(phant.fields);
+            // Post to data.sparkfun
+            postData(phant.fields);
+        }
+        
+        // Wait 10 seconds before taking another reading
+        setTimeout(takeReadings, 10000);
+    });
 }
