@@ -27,7 +27,7 @@ var ntp = require('ntp-client');
 // Save our keys for data.sparkfun
 var phant = {
     server: "data.sparkfun.com",        // Base URL of the feed
-    publicKey: "zDEY0nx64DiYaq6dlddp",  // Public key, everyone can see this
+    publicKey: "xxxxxxxxxxxxxxxxxxxx",  // Public key, everyone can see this
     privateKey: "xxxxxxxxxxxxxxxxxxxx", // Private key, only you should know
     fields: {                           // Your feed's data fields
         "time": null,
@@ -40,12 +40,12 @@ var phant = {
 var reqTimeout = 2000;                  // milliseconds
 
 // TI ADS1015 on ADC Block (http://www.ti.com.cn/cn/lit/ds/symlink/ads1015.pdf)
-var adc = new mraa.I2c(1);
+var adc = new mraa.I2c(6);
 adc.address(0x48);
 
 // Read from ADC and return voltage
 adc.readADC = function(channel) {
-    
+
     // The ADC Block can't have more than 4 channels
     if (channel <= 0) {
         channel = 0;
@@ -53,7 +53,7 @@ adc.readADC = function(channel) {
     if (channel >= 3) {
         channel = 3;
     }
-    
+
     // We will use constant settings for the config register
     var config = 0;                 // Bits     Description
     config |= 1 << 15;              // [15]     Begin a single conversion
@@ -66,20 +66,20 @@ adc.readADC = function(channel) {
     config &= ~(1 << 3);            // [3]      Active low comparator polarity
     config &= ~(1 << 2);            // [2]      Non-latching comparator
     config |= 3;                    // [1:0]    Disable comparator
-    
+
     // Write config settings to ADC to start reading
     this.writeWordFlip(0x01, config);
-    
+
     // Wait for conversion to complete
     while (!(this.readWordFlip(0x01) & 0x8000)) {
     }
-    
+
     // Read value from conversion register and shift by 4 bits
     var voltage = (adc.readWordFlip(0x00) >> 4);
-    
+
     // Find voltage, which is 2mV per incement
     voltage = 0.002 * voltage;
-    
+
     return voltage
 };
 
@@ -97,23 +97,23 @@ adc.readWordFlip = function(reg) {
 
 // Send an HTTP request to data.sparkfun to post our data
 function postData(values) {
-    
+
     var prop;
-    
+
     // Construct the HTTP request string
     var req = "http://data.sparkfun.com/input/" + phant.publicKey +
               "?private_key=" + phant.privateKey;
     for (prop in values) {
         req += "&" + prop + "=" + values[prop].toString().replace(/ /g, "%20");
     }
-    
+
     // Make a request and notify the console of its success
     request(req, {timeout: reqTimeout}, function(error, response, body) {
-        
+
         // Exit if we failed to post
         if (error) {
             console.log("Post failed. " + error);
-            
+
         // If HTTP responded with 200, we know we successfully posted the data
         } else if (response.statusCode === 200) {
             var posted = "Posted successfully with: ";
@@ -130,24 +130,24 @@ function postData(values) {
 // Take temperature and light readings at regular intervals
 takeReadings();
 function takeReadings() {
-    
+
     // Read temperature sensor (on ADC0) and calculate temperature in Celsius
     var v0 = adc.readADC(0);
     var degC = (v0 - 0.5) * 100;
-    
+
     // Read light sensor (on ADC1)
     var v1 = adc.readADC(1);
-    
+
     // Get the current time and post to data.sparkfun
     ntp.getNetworkTime("pool.ntp.org", 123, function(error, datetime) {
-        
+
         // If it's an error, don't post anything
         if (error) {
             console.log("Error getting time: " + error);
-            
+
         // Otherwise, post all the data!
         } else {
-            
+
             // Construct a values object to send to our function
             phant.fields.time = datetime;
             phant.fields.temperature = degC.toFixed(1);
@@ -156,7 +156,7 @@ function takeReadings() {
             // Post to data.sparkfun
             postData(phant.fields);
         }
-        
+
         // Wait 10 seconds before taking another reading
         setTimeout(takeReadings, 10000);
     });
