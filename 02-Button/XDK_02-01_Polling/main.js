@@ -7,7 +7,7 @@
  * Experiment 2 - Part 1: Pushing Some Buttons
  * This sketch was written by SparkFun Electronics
  * October 27, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * This is a simple example program that displays the state of a button
  * to the console.

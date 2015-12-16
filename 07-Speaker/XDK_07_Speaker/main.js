@@ -7,7 +7,7 @@
  * Experiment 7: Speaker
  * This sketch was written by SparkFun Electronics
  * November 17, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Plays a tune using a PWM speaker.
  *

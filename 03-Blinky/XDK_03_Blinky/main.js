@@ -7,7 +7,7 @@
  * Experiment 3: Blinky
  * This sketch was written by SparkFun Electronics
  * October 29, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Blink an LED connected to GP12 (need a transistor if using the Base Block).
  *

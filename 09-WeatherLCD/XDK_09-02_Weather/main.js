@@ -7,7 +7,7 @@
  * Experiment 9 - Part 2: Weather
  * This sketch was written by SparkFun Electronics
  * November 29, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Download a city's weather information from Yahoo Weather
  * (https://developer.yahoo.com/weather/) and display that city's 

@@ -7,7 +7,7 @@
  * Experiment 4: Email Notifier
  * This sketch was written by SparkFun Electronics
  * October 29, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Connect to an email service and turn on an LED if there are any unread
  * emails.

@@ -7,7 +7,7 @@
  * Experiment 6 - Part 2: Edison RGB LED
  * This sketch was written by SparkFun Electronics
  * November 9, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Waits for socket.io connections and received messages to change RGB LED.
  *

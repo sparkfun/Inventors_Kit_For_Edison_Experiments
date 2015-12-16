@@ -8,7 +8,7 @@
  * Experiment 12: Phone BLE Ball
  * This sketch was written by SparkFun Electronics
  * November 23, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  * 
  * Runs as BLE central on smartphone. Accepts BLE connection from Edison and 
  * moves ball around screen based on BLE notifications from the Edison.

@@ -7,7 +7,7 @@
  * Experiment 6 - Part 2: Phone RGB LED
  * This sketch was written by SparkFun Electronics
  * November 9, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Runs as a web app on a smartphone. Creates a socket.io connection to the
  * Edison and sends RGB values.

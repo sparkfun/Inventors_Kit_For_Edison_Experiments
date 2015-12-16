@@ -7,7 +7,7 @@
  * Experiment 10 - Part 1: Keyboard
  * This sketch was written by SparkFun Electronics
  * November 18, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Capture keystrokes from a USB-connected keyboard and display them on a
  * character LCD.

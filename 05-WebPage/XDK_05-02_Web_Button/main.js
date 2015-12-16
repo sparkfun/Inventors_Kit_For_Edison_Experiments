@@ -7,7 +7,7 @@
  * Experiment 5 - Part 2: Web Page Button
  * This sketch was written by SparkFun Electronics
  * November 1, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Serves a web page that allows users to turn an LED on and off remotely.
  *

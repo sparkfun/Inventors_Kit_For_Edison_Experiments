@@ -7,7 +7,7 @@
  * Experiment 10 - Part 2: Chat Room
  * This sketch was written by SparkFun Electronics
  * November 20, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Serves a chat room where users can post messages. Captures keyboard input
  * and posts messages to the chat room.

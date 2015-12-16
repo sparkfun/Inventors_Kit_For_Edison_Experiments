@@ -7,7 +7,7 @@
  * Experiment 8: Temperature and Light Logger
  * This sketch was written by SparkFun Electronics
  * December 2, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Reads temperature and light values from ADC Block and posts them to
  * data.sparkfun.com.
@@ -40,7 +40,7 @@ var phant = {
 var reqTimeout = 2000;                  // milliseconds
 
 // TI ADS1015 on ADC Block (http://www.ti.com.cn/cn/lit/ds/symlink/ads1015.pdf)
-var adc = new mraa.I2c(6);
+var adc = new mraa.I2c(1);
 adc.address(0x48);
 
 // Read from ADC and return voltage

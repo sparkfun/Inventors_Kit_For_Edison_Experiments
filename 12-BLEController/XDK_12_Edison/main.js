@@ -7,7 +7,7 @@
  * Experiment 12: Edison BLE Controller
  * This sketch was written by SparkFun Electronics
  * November 24, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Broadcasts as a BLE device. When a central device (e.g. smarthphone)
  * connects, it sends out button pushes as a notification on a characteristic.

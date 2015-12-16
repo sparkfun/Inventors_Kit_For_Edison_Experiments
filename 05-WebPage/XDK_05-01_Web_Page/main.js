@@ -7,7 +7,7 @@
  * Experiment 5 - Part 1: Web Page
  * This sketch was written by SparkFun Electronics
  * November 1, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Serves a very simple web page from the Edison.
  *

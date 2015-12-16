@@ -7,7 +7,7 @@
  * Experiment 9 - Part 1: Character LCD
  * This sketch was written by SparkFun Electronics
  * November 28, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Display a simple string on the character LCD.
  *

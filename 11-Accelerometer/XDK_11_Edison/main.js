@@ -7,7 +7,7 @@
  * Experiment 11: Edison BLE Display
  * This sketch was written by SparkFun Electronics
  * November 30, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Accepts a connection from a smartphone and processes accelerometer data
  * from the cell phone (sent over BLE). Displays a character on the LCD that is

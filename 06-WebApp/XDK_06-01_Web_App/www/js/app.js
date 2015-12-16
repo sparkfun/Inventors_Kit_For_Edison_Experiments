@@ -7,7 +7,7 @@
  * Experiment 6 - Part 1: Simple Web App
  * This sketch was written by SparkFun Electronics
  * November 10, 2015
- * https://github.com/sparkfun
+ * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  * 
  * Create a some dynamic text that appears when a button is pushed.
  *
