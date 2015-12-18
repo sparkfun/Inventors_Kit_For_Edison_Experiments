@@ -28,8 +28,8 @@ buttonPin.dir(mraa.DIR_IN);
 periodicActivity();
 
 // This function is called forever (due to the setTimeout() function)
-function periodicActivity() //
-{
+function periodicActivity() {
+
     // Read the value of the pin and print it to the screen
     var val = buttonPin.read();
     console.log('Button is ' + val);
@@ -37,3 +37,4 @@ function periodicActivity() //
     // Wait for 250 ms and call this function again
     setTimeout(periodicActivity, 250);
 }
+

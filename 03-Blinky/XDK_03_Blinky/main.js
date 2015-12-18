@@ -29,7 +29,7 @@ periodicActivity();
 function periodicActivity() //
 {
     // Switch state of LED
-    if (led == 0) {
+    if (led === 0) {
         led = 1;
     } else {
         led = 0;

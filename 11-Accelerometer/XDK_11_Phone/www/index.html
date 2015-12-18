@@ -14,7 +14,7 @@ Released under the MIT License(http://opensource.org/licenses/MIT)
 -->
 
 <html>
-    
+
 <head>
   <title>Accelerometer</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -22,6 +22,38 @@ Released under the MIT License(http://opensource.org/licenses/MIT)
     <style>
         @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
         @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        .accel {
+            clear:both;
+            font-family:Arial;
+            font-size:14pt;
+            margin: auto;
+            text-align:right;
+            width: 280px;
+        }
+        .accel:after {
+            visibility: hidden;
+            display: block;
+            font-size: 0;
+            content: " ";
+            clear: both;
+            height: 0;
+        }
+        .accel * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .accel div {
+            background-color:#B6B6B6;
+            float: left;
+            padding: 3px;
+            width: 20%;
+        }
+        .accel div.label {
+            background: transparent;
+            font-weight: bold;
+            width: 10%;
+        }
     </style>
 </head>
 
@@ -29,37 +61,21 @@ Released under the MIT License(http://opensource.org/licenses/MIT)
 
     <!-- Our header -->
     <h3 style="text-align:center;">Accelerometer Demo</h3>
-    
+
+    <style>
+
+    </style>
+
     <!-- X, Y, Z accelerometer fields -->
-    <div style="margin:auto; width:280px; padding:10px; font-size:14pt">
-        <table style="margin:auto; font-family:Arial; text-align:right;">
-            <col width="25px" />
-            <col width="60px" />
-            <col width="25px" />
-            <col width="60px" />
-            <col width="25px" />
-            <col width="60px" />
-            <tr>
-                <td style="padding:2px"><b>X:</b></td>
-                <td id="x" style="
-                                  padding:3px;
-                                  background-color:#B6B6B6;">
-                    0.00
-                </td>
-                <td style="padding:2px"><b> Y:</b></td>
-                <td id="y" style="padding:3px;
-                                  background-color:#B6B6B6;">
-                    0.00
-                </td>
-                <td style="padding:2px"><b> Z:</b></td>
-                <td id="z" style="padding:3px;
-                                  background-color:#B6B6B6;">
-                    0.00
-                </td>
-            </tr>
-        </table>
+    <div class="accel">
+        <div class="label">X:</div>
+        <div id="x">0.00</div>
+        <div class="label">Y:</div>
+        <div id="y">0.00</div>
+        <div class="label">Z:</div>
+        <div id="z">0.00</div>
     </div>
-    
+
     <!-- Debugging -->
     <div style="margin:auto; 
                 width:280px; 
@@ -75,7 +91,7 @@ Released under the MIT License(http://opensource.org/licenses/MIT)
                                background:#0d0d0d;">
         <ul id="debug" style="color:#00BB00;"></ul>
     </div>
-    
+
     <!-- Load the various JavaScript files -->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/jquery/jquery-2.1.4.js"></script>
@@ -83,3 +99,4 @@ Released under the MIT License(http://opensource.org/licenses/MIT)
 </body>
 
 </html>
+

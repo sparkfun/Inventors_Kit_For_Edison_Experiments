@@ -24,7 +24,7 @@ var clock = require('posix-clock');
 // Global constants
 var MAX_FREQ = 2100;
 
-// Set up a digital output on MRAA pin GP13 for the LED
+// Set up a digital output on MRAA pin GP13 for the speaker
 var speakerPin = new mraa.Gpio(13, true, true);
 speakerPin.dir(mraa.DIR_OUT);
 speakerPin.write(0);
@@ -42,12 +42,17 @@ for (var t = 0; t < song.length; t++) {
     var note = song[t].split(',');
     
     // Play the note
-    playNote(speakerPin, note[0], note[1]);
+    playNote(speakerPin, parseInt(note[0], 10), parseInt(note[1], 10));
 }
 console.log("Done!");
 
 // Play a note with a given frequency for msec milliseconds
 function playNote(pin, freq, msec) {
+    
+    // Check to make sure we actually have valid numbers
+    if (freq === "NaN" || msec === "NaN") {
+        return;
+    }
     
     // Make sure we don't go over the maximum frequency
     if (freq >= MAX_FREQ) {
@@ -55,8 +60,8 @@ function playNote(pin, freq, msec) {
     }
     
     // If the frequency is 0, don't play anything
-    if (freq == 0) {
-        console.log("Silece for " + msec + "ms");
+    if (freq === 0) {
+        console.log("Silence for " + msec + "ms");
         sleepUsec(msec * 1000);
         return;
     }

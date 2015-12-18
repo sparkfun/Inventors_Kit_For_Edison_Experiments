@@ -36,7 +36,7 @@ buttonPin.isr(mraa.EDGE_FALLING, serviceRoutine);
 
 // Do nothing while we wait for the ISR
 periodicActivity();
-function periodicActivity() //
-{
+function periodicActivity() {
     setTimeout(periodicActivity, 1000);
 }
+

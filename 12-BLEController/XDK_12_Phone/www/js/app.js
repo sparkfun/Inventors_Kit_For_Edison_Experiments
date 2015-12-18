@@ -121,6 +121,11 @@ window.app = {
     
     // Call this first!
     initialize: function() {
+        
+        // Create a new instance of the game and assign it to the app
+        this.game = new Game($('#ball_canvas')[0]);
+        
+        // Connect events to page elements
         this.bindEvents();
     },
     
@@ -206,13 +211,10 @@ $(function() {
     
     // Initialize the app and assign callbacks
     window.app.initialize();
-    
-    // Create a new instance of the game and assign it to the app
-    window.app.game = new Game($('#ball_canvas')[0]);
 });
 
 // Create a pseudo-debugging console
-// NOTE: Real apps should use alert(), but list messages can be useful when
+// NOTE: Real apps can also use alert(), but list messages can be useful when
 // you are debugging the program
 function debug(msg) {
     $('#debug').append($('<li>').text(msg));

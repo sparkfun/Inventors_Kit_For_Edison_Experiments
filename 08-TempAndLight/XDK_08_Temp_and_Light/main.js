@@ -101,7 +101,7 @@ function postData(values) {
     var prop;
 
     // Construct the HTTP request string
-    var req = "http://data.sparkfun.com/input/" + phant.publicKey +
+    var req = "https://data.sparkfun.com/input/" + phant.publicKey +
               "?private_key=" + phant.privateKey;
     for (prop in values) {
         req += "&" + prop + "=" + values[prop].toString().replace(/ /g, "%20");

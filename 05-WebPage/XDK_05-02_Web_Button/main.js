@@ -32,11 +32,11 @@ var port = 4242;
 // Create a web server that serves a simple web page with a button
 var server = http.createServer(function(req, res) {
     res.writeHead(200);
-    res.write(" <html>                                                      \
+    res.write(" <!DOCTYPE html>                                             \
+                <html>                                                      \
                 <head>                                                      \
                     <title>LED Controller</title>                           \
                     <script src='/socket.io/socket.io.js'></script>         \
-                    </script>                                               \
                 </head>                                                     \
                 <body>                                                      \
                     <p><button onclick='toggle()'>TOGGLE</button></p>       \

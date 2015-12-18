@@ -122,7 +122,7 @@ function onDeviceReady() {
 }
 
 // Create a pseudo-debugging console
-// NOTE: Real apps should use alert(), but list messages can be useful when
+// NOTE: Real apps can also use alert(), but list messages can be useful when
 // you are debugging the program
 function debug(msg) {
     $('#debug').append($('<li>').text(msg));

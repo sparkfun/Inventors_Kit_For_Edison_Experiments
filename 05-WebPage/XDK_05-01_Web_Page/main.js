@@ -23,7 +23,8 @@ var port = 4242;
 // Create a web server that serves a simple web page
 var server = http.createServer(function(req, res) {
     res.writeHead(200);
-    res.write(" <html>                                                      \
+    res.write(" <!DOCTYPE html>                                             \
+                <html>                                                      \
                 <head>                                                      \
                     <title>My Page</title>                                  \
                 </head>                                                     \
