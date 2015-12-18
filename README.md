@@ -3,7 +3,7 @@ Inventor's Kit for Edison Experiments
 
 The [SparkFun Inventor's Kit for Intel® Edison](https://www.sparkfun.com/products/13742), otherwise known as the <i>Edison SIK</i>, introduces the Edison as a powerful Internet of Things (IoT) platform. The experiments contained within these pages will guide you through programming the Edison using [JavaScript](https://en.wikipedia.org/wiki/JavaScript) and controlling various electronics. Whether you are new to electronics and JavaScript or are looking to take your skills to the next level (to the "cloud!"), this kit is a great starting point.
 
--> [![Inventor's Kit for Intel Edison components](https://cdn.sparkfun.com/assets/learn_tutorials/4/4/8/EdisonKit13742-Kit.jpg)*SparkFun Inventor's Kit for Intel® Edison (KIT-13742)*](https://www.sparkfun.com/products/13742) <-
+[![Inventor's Kit for Intel Edison components](https://cdn.sparkfun.com/assets/learn_tutorials/4/4/8/EdisonKit13742-Kit.jpg)](https://www.sparkfun.com/products/13742)
 
 This repository contains all the example code necessary for completing the demo projects in the [SparkFun Inventor's Kit for Edison Experiment Guide](https://learn.sparkfun.com/tutorials/sparkfun-inventors-kit-for-edison-experiment-guide).
 
