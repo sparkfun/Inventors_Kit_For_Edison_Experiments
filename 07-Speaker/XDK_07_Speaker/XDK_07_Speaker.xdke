@@ -1,6 +1,6 @@
 {
   "project": {
-    "projectSettingsVersion": "2.0.0",
+    "projectSettingsVersion": "3.0.0",
     "initialAutoPluginCount": 0,
     "currentBuildConfiguration": "Android",
     "projectFiles": {},
@@ -9,58 +9,100 @@
   "iot-tab": {
     "fileStatus": {
       "icon.png": {
-        "previousModTime": 1447785539316,
-        "modified": 1447785539316,
+        "previousModTime": 1449252433285,
+        "modified": 1449252433285,
         "seen": true,
         "name": "icon.png"
       },
       "main.js": {
-        "previousModTime": 1447796279449,
-        "modified": 1447796279449,
+        "previousModTime": 1470084438594,
+        "modified": 1470084438594,
         "seen": true,
         "name": "main.js"
       },
       "package.json": {
-        "previousModTime": 1447785539315,
-        "modified": 1447785539315,
+        "previousModTime": 1470081523925,
+        "modified": 1470081523925,
         "seen": true,
         "name": "package.json"
       },
       "README.md": {
-        "previousModTime": 1447785539316,
-        "modified": 1447785539316,
+        "previousModTime": 1449252433285,
+        "modified": 1449252433285,
         "seen": true,
         "name": "README.md"
       },
       "XDK_07_Speaker.xdk": {
-        "previousModTime": 1447785539560,
-        "modified": 1447785539560,
+        "previousModTime": 1470079984914,
+        "modified": 1470079984914,
         "seen": true,
         "name": "XDK_07_Speaker.xdk"
       },
       "XDK_07_Speaker.xdke": {
-        "previousModTime": 1447795067271,
-        "modified": 1447795067271,
+        "previousModTime": 1470084412229,
+        "modified": 1470084412229,
         "seen": true,
         "name": "XDK_07_Speaker.xdke"
       },
       "xdk/project-info.json": {
-        "previousModTime": 1447785539523,
-        "modified": 1447785539523,
+        "previousModTime": 1449252433285,
+        "modified": 1449252433285,
         "seen": true,
         "name": "xdk/project-info.json"
       },
       "songs/song.txt": {
-        "previousModTime": 1447795065616,
-        "modified": 1447795065616,
+        "previousModTime": 1470084261108,
+        "modified": 1470084261108,
         "seen": true,
         "name": "songs/song.txt"
+      },
+      "XDK_07_Speaker_2.0.0.xdk_bak": {
+        "previousModTime": 1470079835764,
+        "modified": 1470079835764,
+        "seen": true,
+        "name": "XDK_07_Speaker_2.0.0.xdk_bak"
+      },
+      "XDK_07_Speaker_2.0.0.xdke_bak": {
+        "previousModTime": 1470079835763,
+        "modified": 1470079835763,
+        "seen": true,
+        "name": "XDK_07_Speaker_2.0.0.xdke_bak"
+      },
+      "xdk-publish-meta-data.json": {
+        "previousModTime": 1470079836193,
+        "modified": 1470079836193,
+        "seen": true,
+        "name": "xdk-publish-meta-data.json"
       }
     },
     "boardFileStatus": {
+      "icon.png": {
+        "previousModTime": 1470084440407
+      },
       "main.js": {
-        "previousModTime": 1447796280133
+        "previousModTime": 1470084440407
+      },
+      "package.json": {
+        "previousModTime": 1470084440407
+      },
+      "README.md": {
+        "previousModTime": 1470084440407
+      },
+      "xdk/project-info.json": {
+        "previousModTime": 1470084440407
+      },
+      "songs/song.txt": {
+        "previousModTime": 1470084440407
+      },
+      "XDK_07_Speaker_2.0.0.xdk_bak": {
+        "previousModTime": 1470084440407
+      },
+      "xdk-publish-meta-data.json": {
+        "previousModTime": 1470084440407
       }
     }
+  },
+  "editorTab": {
+    "currentEditorMode": 0
   }
 }

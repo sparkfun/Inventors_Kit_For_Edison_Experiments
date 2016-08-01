@@ -7,6 +7,7 @@
  * Experiment 7: Speaker
  * This sketch was written by SparkFun Electronics
  * November 17, 2015
+ * Updated: August 1, 2016
  * https://github.com/sparkfun/Inventors_Kit_For_Edison_Experiments
  *
  * Plays a tune using a PWM speaker.
@@ -14,12 +15,8 @@
  * Released under the MIT License(http://opensource.org/licenses/MIT)
  */
 
-// Import the MRAA, file system, and POSIX clock modules
-// NOTE: You must build posix-clock (npm install posix-clock) on the Edison
-// iteslf. Building on a Windows machine will fail!
 var mraa = require('mraa');
 var fs = require('fs');
-var clock = require('posix-clock');
 
 // Global constants
 var MAX_FREQ = 2100;
@@ -42,7 +39,7 @@ for (var t = 0; t < song.length; t++) {
     var note = song[t].split(',');
     
     // Play the note
-    playNote(speakerPin, parseInt(note[0], 10), parseInt(note[1], 10));
+    playNote(speakerPin, parseFloat(note[0]), parseInt(note[1], 10));
 }
 console.log("Done!");
 
@@ -62,7 +59,7 @@ function playNote(pin, freq, msec) {
     // If the frequency is 0, don't play anything
     if (freq === 0) {
         console.log("Silence for " + msec + "ms");
-        sleepUsec(msec * 1000);
+        delaynsec(msec * 1e6);
         return;
     }
     
@@ -75,15 +72,22 @@ function playNote(pin, freq, msec) {
     // For one period, send pin high and low for 1/2 period each
     for (var i = 0; i < length; i++) {
         pin.write(1);
-        sleepUsec((period / 2) * 1000000);
+        delaynsec(Math.round((period / 2) * 1e9));
         pin.write(0);
-        sleepUsec((period / 2) * 1000000);
+        delaynsec(Math.round((period / 2) * 1e9));
     }
 }
 
-// Sleep for a number of given microseconds using the POSIX clock
-function sleepUsec(usec) {
-    var s = Math.floor(usec / 1000000);
-    var ns = Math.floor((usec - (s * 1000000)) * 1000);
-    clock.nanosleep(clock.MONOTONIC, 0, {sec: s, nsec: ns});
+// Delay for a number of given nanoseconds
+function delaynsec(nsec) {
+    
+    var time = process.hrtime();
+    var diff;
+    var diffNSec;
+    
+    // Wait until the specified number of nanoseconds has passed
+    do {
+        diff = process.hrtime(time);
+        diffNSec = (diff[0] * 1e9) + diff[1];
+    } while (diffNSec < nsec);
 }
